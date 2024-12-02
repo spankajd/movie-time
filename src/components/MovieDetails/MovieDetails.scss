@@ -12,15 +12,10 @@
     display: inline-flex;
     flex-direction: row;
     gap: 10px; 
-
-    p {
-        margin: 0;
-    }
  }
  .movie-poster {
-    height: 100%;
-    max-height: 200px;
     width: 40%;
+    max-width: 200px;
  }
  .movie-properties {
     list-style: none;
@@ -32,7 +27,16 @@
             margin-top: 0;
         }
         margin: 10px 0;
+        line-height: 20px;
     }
+ }
+
+ .movie-footer {
+   p {
+      margin-top: 15px;
+      line-height: 20px;
+      letter-spacing: 0.5px;
+  }
  }
 
 
@@ -43,6 +47,24 @@
     .movie-title {
         display: none;
     }
+
+    .movie-poster {
+      width: auto;
+      max-width: auto;
+      height: 200px;
+   }
+   .movie-properties {
+    li {
+      line-height: 18px;
+      letter-spacing: 0.2px;
+    }
+   }
+   .movie-footer {
+      p {
+         margin-top: 0;
+         line-height: 20px;
+      }
+   }
  }
  
 }
