@@ -1,0 +1,23 @@
+.movie-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    width: 60%;
+
+
+    .movie-item {
+        border-bottom: 1px solid #8badce;
+    }
+    .movie-details {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .movie-details {
+            display: flex !important;
+        }
+    }
+}

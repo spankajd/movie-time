@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieItem Component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="movie-item false"
+    data-testid="movie-item"
+  >
+    <div
+      class="movie-id"
+    >
+      Episode 
+    </div>
+    <div
+      class="movie-title"
+    >
+      Episode  - Test
+    </div>
+    <div
+      class="movie-rating"
+    >
+      <div
+        class="rating"
+      >
+        N/A
+      </div>
+    </div>
+    <div
+      class="movie-release-date"
+    />
+  </div>
+</DocumentFragment>
+`;

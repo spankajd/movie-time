@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SortByComp Component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="SortByComp"
+  >
+    <label
+      for="sortBy"
+    >
+      Sort By: 
+    </label>
+    <select
+      data-testid="sortBy"
+      id="sortBy"
+    >
+      <option
+        value=""
+      >
+        Select
+      </option>
+      <option
+        value="episode_id"
+      >
+        Episode
+      </option>
+      <option
+        value="release_date"
+      >
+        Release Date
+      </option>
+      <option
+        value="title"
+      >
+        Title
+      </option>
+      <option
+        value="imdbRating"
+      >
+        Rating
+      </option>
+    </select>
+  </div>
+</DocumentFragment>
+`;

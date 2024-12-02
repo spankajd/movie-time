@@ -1,0 +1,48 @@
+.movie-details {
+ display: flex;
+ width: calc(40% - 30px);
+ padding: 15px;
+ flex-direction: column;
+
+ .movie-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+ }
+ .movie-section {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 10px; 
+
+    p {
+        margin: 0;
+    }
+ }
+ .movie-poster {
+    height: 100%;
+    max-height: 200px;
+    width: 40%;
+ }
+ .movie-properties {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    li {
+        &:first-child {
+            margin-top: 0;
+        }
+        margin: 10px 0;
+    }
+ }
+
+
+ @media (max-width: 768px) {
+    width: calc(100% - 20px);
+    border-bottom: 1px solid #8badce;
+    padding: 10px;
+    .movie-title {
+        display: none;
+    }
+ }
+ 
+}

@@ -1,0 +1,20 @@
+.header {
+    width: 100%;
+    padding: 20px 0;
+    background: #13518e;
+    text-align: center;
+
+    .title {
+        font-family: 'Poppins-SemiBold';
+        color: #FFF;
+        font-size: 36px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 15px 0;
+
+        .title {
+            font-size: 28px;
+        }
+    }
+}

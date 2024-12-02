@@ -1,0 +1,54 @@
+.movie-item {
+    display: flex;
+    width: calc(100% - 20px);
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+        background-color:#d4e8fb;
+    }
+    &.active {
+        background-color:#d4e8fb;
+    }
+
+    .movie-id {
+        width: 15%;
+    }
+    .movie-title {
+        width: 45%;
+    }
+    .movie-rating {
+        width: 25%;
+    }
+    .movie-release-date {
+        width: 15%;
+        text-align: right;
+    }
+
+  @media (max-width: 768px) {
+    .movie-id {
+        display: none;
+    }
+    .movie-rating {
+        display: none;
+    }
+    .movie-title {
+        width: 75%;
+    }
+    .movie-release-date {
+        width: 25%;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .movie-id,
+    .movie-rating {
+        display: none;
+    }
+    .movie-title {
+        width: 60%;
+    }
+    .movie-release-date {
+        width: 40%;
+    }
+  }
+}

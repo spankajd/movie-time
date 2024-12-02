@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="Home"
+  >
+    <div
+      class="header"
+    >
+      <span
+        class="title"
+      >
+        Movie Time
+      </span>
+    </div>
+    <div
+      class="container"
+    >
+      <div
+        class="top-section"
+      >
+        <div
+          class="SortByComp"
+        >
+          <label
+            for="sortBy"
+          >
+            Sort By: 
+          </label>
+          <select
+            data-testid="sortBy"
+            id="sortBy"
+          >
+            <option
+              value=""
+            >
+              Select
+            </option>
+            <option
+              value="episode_id"
+            >
+              Episode
+            </option>
+            <option
+              value="release_date"
+            >
+              Release Date
+            </option>
+            <option
+              value="title"
+            >
+              Title
+            </option>
+            <option
+              value="imdbRating"
+            >
+              Rating
+            </option>
+          </select>
+        </div>
+        <div
+          class="SearchBox"
+        >
+          <input
+            data-testid="SearchBox"
+            placeholder="Search movie..."
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        class="movie-wrapper"
+      >
+        <div
+          class="movie-list"
+        />
+        <div
+          class="movie-details"
+        >
+          <div
+            class="message"
+          >
+            Please select movie from the list
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="wrapper"
+    >
+      <img
+        src="/assets/loader.gif"
+      />
+      <div
+        class="message"
+      >
+        Hold On!
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

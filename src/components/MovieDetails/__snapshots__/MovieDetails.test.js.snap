@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieDetails Component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="movie-details"
+  >
+    <div
+      class="message"
+    >
+      Please select movie from the list
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,11 @@
+.rating {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    padding: 3px;
+    .star {
+        flex: 1;
+        width: 10px;
+    }
+}
