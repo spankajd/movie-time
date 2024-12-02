@@ -6,7 +6,7 @@ import { selectSearchQuery, selectSelectedMovie, selectSortBy } from "../../stor
 import { selectMovie } from "../../store/actions/movieActions";
 
 
-const MovieList = React.memo(({movies}) => {
+const MovieList = ({movies}) => {
     const dispatch = useDispatch();
     const [list, setList] = useState([]);
     const sortBy = useSelector(selectSortBy);
@@ -31,13 +31,13 @@ const MovieList = React.memo(({movies}) => {
         }
         setList(tempList);
 
-    },[movies, sortBy,searchQuery]);
+    },[movies, sortBy, searchQuery, dispatch]);
 
     return <div className="movie-list"> 
         {
             list?.map( movie => <MovieItem movie={movie} isActive={movie.title === selectedMovie?.title} key={movie.episode_id} />)
             }
     </div>
-})
+}
 
 export default MovieList;

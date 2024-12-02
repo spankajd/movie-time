@@ -19,8 +19,8 @@ export const integerToRoman = (num) => {
     
     for (const { value, symbol } of romanMap) {
       while (num >= value) {
-        romanNumeral += symbol; // Append the Roman numeral
-        num -= value;           // Decrease the number
+        romanNumeral += symbol; 
+        num -= value;
       }
     }
     

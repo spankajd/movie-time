@@ -1,70 +1,70 @@
 .movie-details {
- display: flex;
- width: calc(40% - 30px);
- padding: 15px;
- flex-direction: column;
+   display: flex;
+   width: calc(40% - 30px);
+   padding: 15px;
+   flex-direction: column;
 
- .movie-title {
-    font-size: 20px;
-    margin-bottom: 10px;
- }
- .movie-section {
-    display: inline-flex;
-    flex-direction: row;
-    gap: 10px; 
- }
- .movie-poster {
-    width: 40%;
-    max-width: 200px;
- }
- .movie-properties {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 60%;
-    li {
-        &:first-child {
-            margin-top: 0;
-        }
-        margin: 10px 0;
-        line-height: 20px;
-    }
- }
-
- .movie-footer {
-   p {
-      margin-top: 15px;
-      line-height: 20px;
-      letter-spacing: 0.5px;
-  }
- }
-
-
- @media (max-width: 768px) {
-    width: calc(100% - 20px);
-    border-bottom: 1px solid #8badce;
-    padding: 10px;
-    .movie-title {
-        display: none;
-    }
-
-    .movie-poster {
-      width: auto;
-      max-width: auto;
-      height: 200px;
+   .movie-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+   }
+   .movie-section {
+      display: inline-flex;
+      flex-direction: row;
+      gap: 10px; 
+   }
+   .movie-poster {
+      width: 40%;
+      max-width: 200px;
    }
    .movie-properties {
-    li {
-      line-height: 18px;
-      letter-spacing: 0.2px;
-    }
-   }
-   .movie-footer {
-      p {
-         margin-top: 0;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 60%;
+      li {
+         &:first-child {
+            margin-top: 0;
+         }
+         margin: 10px 0;
          line-height: 20px;
       }
    }
- }
+
+   .movie-footer {
+      p {
+         margin-top: 15px;
+         line-height: 20px;
+         letter-spacing: 0.5px;
+      }
+   }
+
+
+   @media (max-width: 768px) {
+      width: calc(100% - 20px);
+      border-bottom: 1px solid #8badce;
+      padding: 10px;
+      .movie-title {
+         display: none;
+      }
+
+      .movie-poster {
+         width: auto;
+         max-width: auto;
+         height: 200px;
+      }
+      .movie-properties {
+         li {
+            line-height: 18px;
+            letter-spacing: 0.2px;
+         }
+      }
+      .movie-footer {
+         p {
+            margin-top: 10px;
+            line-height: 20px;
+         }
+      }
+   }
  
 }

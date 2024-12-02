@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import '@testing-library/jest-dom'; // Provides additional matchers
+import '@testing-library/jest-dom';
 import Rating from "./Rating";
 
 describe("Rating Component", () => {

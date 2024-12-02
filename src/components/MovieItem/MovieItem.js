@@ -1,28 +1,27 @@
 import React , { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+
+import { fetchMovieDetails, selectMovie } from '../../store/actions/movieActions';
 
 import {integerToRoman} from '../../utils/helper';
+
 import Rating from '../Rating/Rating';
+import MovieDetails from '../MovieDetails/MovieDetails';
 
 import './MovieItem.scss';
 
-import { fetchMovieDetails, selectMovie } from '../../store/actions/movieActions';
-import { selectMovieByTitle } from '../../store/selectors/movieSelectors';
-import MovieDetails from '../MovieDetails/MovieDetails';
-
-const MovieItem = React.memo(({movie, isActive=false}) => {
+const MovieItem = ({movie, isActive=false}) => {
     const dispatch = useDispatch();
-    const data = useSelector((state) => selectMovieByTitle(state,movie?.title))[0];
-
-    useEffect( () => {
-        data?.Title || dispatch(fetchMovieDetails(movie?.title));
-    },[]);
     
-    const onMovieSelect = (event) => {
+    useEffect( () => {
+        movie?.Title || dispatch(fetchMovieDetails(movie?.title));
+    },[dispatch, movie]);
+    
+    const onMovieSelect = () => {
         if(isActive) {
             dispatch(selectMovie(null));
         } else {
-            dispatch(selectMovie(data));
+            dispatch(selectMovie(movie));
         }
     }
 
@@ -35,6 +34,6 @@ const MovieItem = React.memo(({movie, isActive=false}) => {
     </div>
     {isActive && <MovieDetails />}
     </>
-});
+};
 
 export default MovieItem;

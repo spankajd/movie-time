@@ -1,3 +1,4 @@
+import React from 'react';
 import './Rating.scss';
 
 const Rating = ({rating}) => {
@@ -8,8 +9,11 @@ const Rating = ({rating}) => {
     const starArray = [];
 
     for(let i = 0; i < totalRating; i++) {
-        
-        starArray.push(<img className="star" src={ i < rating ? FullStar : EmptyStar} key={i} alt={ i < rating ? "full star" : "empty star"}/>)
+        starArray.push(<img 
+            className="star"
+            src={ i < rating ? FullStar : EmptyStar} key={i}
+            alt={ i < rating ? "full star" : "empty star"}
+        />);
     }
 
     return <div className='rating' >

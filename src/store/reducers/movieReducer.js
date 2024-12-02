@@ -8,7 +8,7 @@ import {
     SELECTE_MOVIE,
     SET_SEARCH_QUERY,
     SET_SORT_BY
-     } from '../constants/movieConstant.js';
+} from '../constants/movieConstant.js';
 
 const initialState = {
     movies: [],
@@ -17,10 +17,10 @@ const initialState = {
     error: null,
     searchQuery:"",
     sortBy:"title" //release_date , episode_id, title
-  };
+};
   
-  const movieReducer = (state = initialState, action) => {
-    let movies, item;
+const movieReducer = (state = initialState, action) => {
+    let movies;
     switch (action.type) {
         case FETCH_MOVIES_REQUEST:
             return { ...state, isLoading: true, error: null };
@@ -59,6 +59,6 @@ const initialState = {
         default:
             return state;
     }
-  };
+};
   
   export default movieReducer;

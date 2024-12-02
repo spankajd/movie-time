@@ -1,5 +1,5 @@
 import { fireEvent, screen } from "@testing-library/react";
-import '@testing-library/jest-dom'; // Provides additional matchers
+import '@testing-library/jest-dom';
 import { renderWithProviders } from "../../utils/test-utlis";
 import SearchBox from "./SearchBox";
 
